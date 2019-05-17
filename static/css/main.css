@@ -23,7 +23,6 @@
     flex: 1 1 auto;
     grid-area: navbar;
     justify-content: center;
-    opacity: 0.5;
     transform: translate(0%, 0%);
     width: auto;
     height: 100%;
