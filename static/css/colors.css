@@ -1,0 +1,37 @@
+/** Defines the color palette **/
+:root {
+    --primary-light-c:  #A239CA; /*Fuschia*/
+
+    --primary-dark-c:   #0E0B16; /*Void*/
+
+    --secondary-light-c:#E7DFDD; /*Stark*/
+
+    --secondary-dark-c: #4717F6; /*Jewel*/
+
+    --tertiary-light-c: white;
+}
+
+/* Apply the color palette */
+body {
+    background-color: var(--primary-dark-c);
+}
+
+#header {
+    color: var(--secondary-light-c);
+}
+
+#main-content {
+    color: var(--secondary-light-c);
+    border-color: var(--secondary-dark-c);
+}
+
+/* Nav colors */
+#navbar {
+    background-color: var(--secondary-dark-c);
+    color: var(--secondary-light-c);
+}
+
+#navbar a:hover {
+    background-color: var(--secondary-light-c);
+    color: var(--secondary-dark-c);
+}

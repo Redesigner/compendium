@@ -1,0 +1,7 @@
+<div id="navbar">
+    {% for navitem in navitems %}
+    <a href={{navitem.url}}>
+    <h3>{{navitem.name}}</h3>
+    </a>
+    {% endfor %}
+</div>

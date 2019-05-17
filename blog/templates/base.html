@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <!--load minifed css in production
+        for testing this is okay, but it will end up
+        making too many http requests-->
+    <link rel="stylesheet" href={% static "css/reset.css" %}>
+    <!--must come after reset!-->
+    <link rel="stylesheet" href={% static "css/main.css" %}>
+    <link rel="stylesheet" href={% static "css/colors.css" %}>
+    <link rel="stylesheet" href={% static "css/typography.css" %}>
+    <!--link rel="stylesheet href={%static "css/min.css" %}-->
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="container">
+        {% include 'includes/navbar.html' %}
+        {% include 'includes/header.html' %}
+        <div id="main-content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+</html>

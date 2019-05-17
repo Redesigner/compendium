@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10vh 40% auto 20%;
+    grid-gap: 20px;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "header header header"
+        ". body ."
+        ". footer ."
+}
+
+#main-content {
+    border: 1px solid;
+    grid-area: body;
+    margin: 10%;
+    padding: 10%;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    grid-area: navbar;
+    justify-content: center;
+    opacity: 0.5;
+    transform: translate(0%, 0%);
+    width: auto;
+    height: 100%;
+}
+
+#navbar:hover{
+    opacity: 1;
+}
+
+#navbar a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+#header {
+    margin: auto;
+    grid-area: header;
+}

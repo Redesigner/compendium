@@ -1,0 +1,28 @@
+/*
+    This css file is for setting fonts and styling
+    It shouldn't be visible in production!
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cantata+One');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    font-family: 'Cantana One', serif;
+    font-size: 3rem;
+}
+
+#main-content {
+    line-height: 1.5rem;
+}
+
+#navbar {
+    font-size: 1.5rem;
+}
