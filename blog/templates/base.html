@@ -12,6 +12,7 @@
     <!--link rel="stylesheet" href={% static "css/colors.css" %}-->
     <link rel="stylesheet" href={% static "css/typography.css" %}>
     <!--link rel="stylesheet href={%static "css/min.css" %}-->
+    {% block links %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <div id="main-content">
             {% block content %}{% endblock %}
         </div>
+        {% include 'includes/footer.html' %}
     </div>
 </body>
 </html>

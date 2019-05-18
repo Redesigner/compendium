@@ -14,13 +14,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+a {
+    font-weight: bold;
+}
+
+
+textarea, input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    line-height: 1.7em;
+    padding: 1.5em;
+}
+
+
 #header {
     font-family: 'Cantana One', serif;
     font-size: 3rem;
 }
 
 #main-content {
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 }
 
 #navbar {

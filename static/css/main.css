@@ -1,8 +1,11 @@
+html {
+    overflow-y: scroll;
+}
+
 .container {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10vh 40% auto 20%;
-    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "navbar navbar navbar"
         "header header header"
@@ -13,8 +16,7 @@
 #main-content {
     border: 1px solid;
     grid-area: body;
-    margin: 10%;
-    padding: 10%;
+    padding: 7.5% 10%;
 }
 
 #navbar {
@@ -22,14 +24,11 @@
     flex-direction: row;
     flex: 1 1 auto;
     grid-area: navbar;
-    justify-content: center;
-    transform: translate(0%, 0%);
-    width: auto;
     height: 100%;
+    justify-content: center;
 }
 
 #navbar:hover{
-    opacity: 1;
 }
 
 #navbar a {
@@ -37,10 +36,25 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    padding: 1em;
 }
-
 
 #header {
     margin: auto;
     grid-area: header;
+    padding: 1em;
+}
+
+#footer {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    grid-area: footer;
+    margin: auto;
+    padding: 4em;
+}
+
+#footer li {
+    text-align: center;
 }

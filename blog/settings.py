@@ -17,7 +17,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     'compendium',
+    'contact',
     'landing',
+    'posts',
 
 
     'django.contrib.admin',

@@ -1,0 +1,34 @@
+#contact {
+    display: grid;
+    grid-template-columns: [left] 50% [middle] 50% [right];
+    grid-template-areas:
+        'name email'
+        'message message'
+        'send send';
+    width: 100%;
+    height: 100%;
+}
+
+#contact * {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+#name {
+    grid-area: name;
+}
+
+#email {
+    grid-area: email;
+}
+
+#message {
+    grid-area: message;
+    resize: none;
+    overflow: auto;
+}
+
+#send {
+    grid-area: send;
+}

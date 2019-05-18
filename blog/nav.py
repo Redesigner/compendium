@@ -5,7 +5,7 @@ class navitem:
 
 navitems = [
     navitem('Home','/'),
-    navitem('Blog','blog'),
+    navitem('Blog','posts'),
     navitem('Compendium','compendium'),
     navitem('Contact','contact'),
-    ]
+]

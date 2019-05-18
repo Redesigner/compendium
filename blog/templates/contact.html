@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Contact me!{% endblock %}
+
+{% block links %}
+    {% load static %}
+    <link href='{% static "css/contact.css" %}' rel='stylesheet'>
+{% endblock %}
+
+{% block content %}
+    <form id="contact" method="post">{% csrf_token %}
+        <input id="name" name="name" type="text" placeholder="Name of Organization">
+        <input id="email" name="address" type="text" placeholder="E-mail Address">
+        <textarea id="message" name="body" form="contact-form" placeholder="Message" wrap="hard" rows="30"></textarea>
+        <input id="send" type="submit" value="Send Message">
+    </form>
+{% endblock %}
